@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=0.1
+Name=Pdfbook Gtk GUI
+Comment=A Gtk wrapper for pdfbook
+Exec=/home/lewtds/dev/src/pdfbook-gtk/pdfbook-gtk
+Type=Application
+Categories=Utility;
+StartupNotify=false
