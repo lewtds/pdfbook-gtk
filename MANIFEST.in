@@ -1,0 +1,5 @@
+include README.md
+include setup.py
+include run
+include pdfbook-gtk.desktop
+include pdfbookgtk/data/ui.glade

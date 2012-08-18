@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 from gi.repository import GLib, Gtk, Gdk, GObject
 import subprocess
 import signal
@@ -7,7 +5,7 @@ import os
 import threading
 import time
 
-ui_file = os.path.join(os.path.dirname(__file__), 'ui.glade')
+ui_file = os.path.join(os.path.dirname(__file__), 'data/ui.glade')
 
 class CommandThread(threading.Thread) :
     def __init__(self, command, args, widget, cwd=None) :
@@ -194,10 +192,13 @@ class Wrapper(Gtk.Dialog) :
     def on_entry_icon_clicked(self, widget, icon_pos, event) :
         widget.set_text("")
 
-if __name__ == '__main__':
+def main() :
     GObject.threads_init()
 	# Quit when Control-C is received
     signal.signal(signal.SIGINT, signal.SIG_DFL)
     
     app = Wrapper()
     Gtk.main()
+    
+if __name__ == '__main__':
+    main()

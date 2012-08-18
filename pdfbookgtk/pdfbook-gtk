@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+
+try:
+    # Load module from same directory
+    import main
+    print 'Starting Pdfbook-gtk from the source directory'
+    main.main()
+except ImportError:
+    # Load installed module
+    import pdfbookgtk.main
+    pdfbookgtk.main.main()
