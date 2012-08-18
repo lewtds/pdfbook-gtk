@@ -1,9 +1,9 @@
-
 [Desktop Entry]
 Version=0.1
 Name=Pdfbook Gtk GUI
 Comment=A Gtk wrapper for pdfbook
 Exec=pdfbook-gtk
+Icon=applications-other
 Type=Application
 Categories=Utility;
 StartupNotify=false
